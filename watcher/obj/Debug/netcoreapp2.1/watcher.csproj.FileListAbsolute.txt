@@ -1,0 +1,7 @@
+C:\Users\diash\source\repos\watcher\watcher\bin\Debug\netcoreapp2.1\watcher.deps.json
+C:\Users\diash\source\repos\watcher\watcher\bin\Debug\netcoreapp2.1\watcher.runtimeconfig.json
+C:\Users\diash\source\repos\watcher\watcher\bin\Debug\netcoreapp2.1\watcher.runtimeconfig.dev.json
+C:\Users\diash\source\repos\watcher\watcher\bin\Debug\netcoreapp2.1\watcher.dll
+C:\Users\diash\source\repos\watcher\watcher\obj\Debug\netcoreapp2.1\watcher.csproj.CoreCompileInputs.cache
+C:\Users\diash\source\repos\watcher\watcher\obj\Debug\netcoreapp2.1\watcher.AssemblyInfoInputs.cache
+C:\Users\diash\source\repos\watcher\watcher\obj\Debug\netcoreapp2.1\watcher.AssemblyInfo.cs
