@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "watcher", "watcher\watcher.csproj", "{3FD3DB94-D281-4CA9-BE11-201E8A4D01DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Watcher", "watcher\Watcher.csproj", "{3FD3DB94-D281-4CA9-BE11-201E8A4D01DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app1", "app1\app1.csproj", "{E1B84757-78ED-468A-98C6-945BEED9A9AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App1", "app1\App1.csproj", "{E1B84757-78ED-468A-98C6-945BEED9A9AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app2", "app2\app2.csproj", "{BA4A10D2-B8C8-48AA-B919-2D729EAD3CF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App2", "app2\App2.csproj", "{BA4A10D2-B8C8-48AA-B919-2D729EAD3CF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kafka-lib", "kafka-lib\kafka-lib.csproj", "{5477F4E1-297F-4134-8730-5543D5BCB0ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaLib", "kafka-lib\KafkaLib.csproj", "{5477F4E1-297F-4134-8730-5543D5BCB0ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

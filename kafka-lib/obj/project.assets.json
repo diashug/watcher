@@ -893,9 +893,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diash\\source\\repos\\watcher\\kafka-lib\\kafka-lib.csproj",
-      "projectName": "kafka-lib",
-      "projectPath": "C:\\Users\\diash\\source\\repos\\watcher\\kafka-lib\\kafka-lib.csproj",
+      "projectUniqueName": "C:\\Users\\diash\\source\\repos\\watcher\\kafka-lib\\KafkaLib.csproj",
+      "projectName": "KafkaLib",
+      "projectPath": "C:\\Users\\diash\\source\\repos\\watcher\\kafka-lib\\KafkaLib.csproj",
       "packagesPath": "C:\\Users\\diash\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\diash\\source\\repos\\watcher\\kafka-lib\\obj\\",
       "projectStyle": "PackageReference",

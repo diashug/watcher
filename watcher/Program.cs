@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace watcher
+namespace Watcher
 {
     class Program
     {
