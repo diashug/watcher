@@ -1,0 +1,9 @@
+C:\Users\diash\source\repos\watcher\kafka-lib\bin\Debug\netcoreapp2.1\KafkaLib.deps.json
+C:\Users\diash\source\repos\watcher\kafka-lib\bin\Debug\netcoreapp2.1\KafkaLib.dll
+C:\Users\diash\source\repos\watcher\kafka-lib\bin\Debug\netcoreapp2.1\KafkaLib.pdb
+C:\Users\diash\source\repos\watcher\kafka-lib\obj\Debug\netcoreapp2.1\KafkaLib.csprojAssemblyReference.cache
+C:\Users\diash\source\repos\watcher\kafka-lib\obj\Debug\netcoreapp2.1\KafkaLib.csproj.CoreCompileInputs.cache
+C:\Users\diash\source\repos\watcher\kafka-lib\obj\Debug\netcoreapp2.1\KafkaLib.AssemblyInfoInputs.cache
+C:\Users\diash\source\repos\watcher\kafka-lib\obj\Debug\netcoreapp2.1\KafkaLib.AssemblyInfo.cs
+C:\Users\diash\source\repos\watcher\kafka-lib\obj\Debug\netcoreapp2.1\KafkaLib.dll
+C:\Users\diash\source\repos\watcher\kafka-lib\obj\Debug\netcoreapp2.1\KafkaLib.pdb

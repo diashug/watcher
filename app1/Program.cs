@@ -1,12 +1,27 @@
 ﻿using System;
+using KafkaLib;
 
 namespace App1
 {
     class Program
     {
+        private static string _consumerTopicName = "app1.inbox";
+        private static string _producerTopicName = "app1.outbox";
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("App1 initialised ...");
+
+            var cc = new ContentConsumer(_consumerTopicName);
+
+            cc.OnMessageReceived += HandleMessageReceived;
+
+            cc.ConsumeMessages();
+        }
+
+        static void HandleMessageReceived(object sender, ConsumerEventArgs e)
+        {
+            Console.WriteLine($"{sender.ToString()} sent {e.message}");
         }
     }
 }

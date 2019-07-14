@@ -5,3 +5,7 @@ C:\Users\diash\source\repos\watcher\watcher\bin\Debug\netcoreapp2.1\watcher.dll
 C:\Users\diash\source\repos\watcher\watcher\obj\Debug\netcoreapp2.1\watcher.csproj.CoreCompileInputs.cache
 C:\Users\diash\source\repos\watcher\watcher\obj\Debug\netcoreapp2.1\watcher.AssemblyInfoInputs.cache
 C:\Users\diash\source\repos\watcher\watcher\obj\Debug\netcoreapp2.1\watcher.AssemblyInfo.cs
+C:\Users\diash\source\repos\watcher\watcher\bin\Debug\netcoreapp2.1\Watcher.pdb
+C:\Users\diash\source\repos\watcher\watcher\obj\Debug\netcoreapp2.1\Watcher.csprojAssemblyReference.cache
+C:\Users\diash\source\repos\watcher\watcher\obj\Debug\netcoreapp2.1\Watcher.dll
+C:\Users\diash\source\repos\watcher\watcher\obj\Debug\netcoreapp2.1\Watcher.pdb

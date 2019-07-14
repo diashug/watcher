@@ -1,14 +1,17 @@
 ﻿using Confluent.Kafka;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Threading;
 
 namespace KafkaLib
 {
-    class ContentConsumer
+    public delegate void ConsumerEventHandler(object sender, ConsumerEventArgs e);
+
+    public class ContentConsumer
     {
         private string _topicName;
         private ConsumerConfig _configs;
+
+        public event ConsumerEventHandler OnMessageReceived;
 
         public ContentConsumer(string topicName)
         {
@@ -22,13 +25,24 @@ namespace KafkaLib
             };
         }
 
+        public void MessageReceived(ConsumerEventArgs e)
+        {
+            OnMessageReceived?.Invoke(this, e);
+        }
+
         public void ConsumeMessages()
         {
-            const int commitPeriod = 5;
+            var args = new ConsumerEventArgs();
 
             using (var consumer = new ConsumerBuilder<Null, string>(_configs).Build())
             {
                 consumer.Subscribe(new string[] { _topicName });
+
+                CancellationTokenSource cts = new CancellationTokenSource();
+                Console.CancelKeyPress += (_, e) => {
+                    e.Cancel = true; // prevent the process from terminating.
+                    cts.Cancel();
+                };
 
                 try
                 {
@@ -36,7 +50,7 @@ namespace KafkaLib
                     {
                         try
                         {
-                            var consumeResult = consumer.Consume();
+                            var consumeResult = consumer.Consume(cts.Token);
 
                             if (consumeResult.IsPartitionEOF)
                             {
@@ -46,25 +60,11 @@ namespace KafkaLib
                                 continue;
                             }
 
+                            args.message = consumeResult.Value;
+                            MessageReceived(args);
+
                             Console.WriteLine($"Received message at {consumeResult.TopicPartitionOffset}: {consumeResult.Value}");
 
-                            if (consumeResult.Offset % commitPeriod == 0)
-                            {
-                                // The Commit method sends a "commit offsets" request to the Kafka
-                                // cluster and synchronously waits for the response. This is very
-                                // slow compared to the rate at which the consumer is capable of
-                                // consuming messages. A high performance application will typically
-                                // commit offsets relatively infrequently and be designed handle
-                                // duplicate messages in the event of failure.
-                                try
-                                {
-                                    consumer.Commit(consumeResult);
-                                }
-                                catch (KafkaException e)
-                                {
-                                    Console.WriteLine($"Commit error: {e.Error.Reason}");
-                                }
-                            }
                         }
                         catch (ConsumeException e)
                         {

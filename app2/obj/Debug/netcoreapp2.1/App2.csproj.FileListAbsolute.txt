@@ -1,0 +1,11 @@
+C:\Users\diash\source\repos\watcher\app2\bin\Debug\netcoreapp2.1\App2.deps.json
+C:\Users\diash\source\repos\watcher\app2\bin\Debug\netcoreapp2.1\App2.runtimeconfig.json
+C:\Users\diash\source\repos\watcher\app2\bin\Debug\netcoreapp2.1\App2.runtimeconfig.dev.json
+C:\Users\diash\source\repos\watcher\app2\bin\Debug\netcoreapp2.1\App2.dll
+C:\Users\diash\source\repos\watcher\app2\bin\Debug\netcoreapp2.1\App2.pdb
+C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.csprojAssemblyReference.cache
+C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.csproj.CoreCompileInputs.cache
+C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.AssemblyInfoInputs.cache
+C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.AssemblyInfo.cs
+C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.dll
+C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.pdb

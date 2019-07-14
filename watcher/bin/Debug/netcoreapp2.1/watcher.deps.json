@@ -1,23 +1,41 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "signature": "65304fb22c09d5f49e52af7c337afa8a1d70529a"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "watcher/1.0.0": {
+      "Watcher/1.0.0": {
+        "dependencies": {
+          "prometheus-net": "3.1.4"
+        },
         "runtime": {
-          "watcher.dll": {}
+          "Watcher.dll": {}
+        }
+      },
+      "prometheus-net/3.1.4": {
+        "runtime": {
+          "lib/netstandard2.0/Prometheus.NetStandard.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.4.0"
+          }
         }
       }
     }
   },
   "libraries": {
-    "watcher/1.0.0": {
+    "Watcher/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "prometheus-net/3.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vsXNMZiNC/fjJ7S6DriPfel3KOlwGvNCxf/udP/E8XyHpLDu76GJqGuuyU1y8qcDHWOmFQYvmpNBOjA6QnUdqw==",
+      "path": "prometheus-net/3.1.4",
+      "hashPath": "prometheus-net.3.1.4.nupkg.sha512"
     }
   }
 }
