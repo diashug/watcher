@@ -1,17 +1,26 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "65304fb22c09d5f49e52af7c337afa8a1d70529a"
+    "signature": "5da06cfbde37098d5eaf3100b6d98fa7670ac111"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "Watcher/1.0.0": {
         "dependencies": {
+          "Sentry": "1.2.0",
           "prometheus-net": "3.1.4"
         },
         "runtime": {
           "Watcher.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
         }
       },
       "prometheus-net/3.1.4": {
@@ -21,7 +30,38 @@
             "fileVersion": "3.1.4.0"
           }
         }
-      }
+      },
+      "Sentry/1.2.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Sentry.PlatformAbstractions": "1.0.0",
+          "Sentry.Protocol": "1.0.6",
+          "System.Collections.Immutable": "1.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sentry.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "Sentry.PlatformAbstractions/1.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Sentry.PlatformAbstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Sentry.Protocol/1.0.6": {
+        "runtime": {
+          "lib/netstandard2.0/Sentry.Protocol.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
+          }
+        }
+      },
+      "System.Collections.Immutable/1.5.0": {}
     }
   },
   "libraries": {
@@ -30,12 +70,47 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
     "prometheus-net/3.1.4": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-vsXNMZiNC/fjJ7S6DriPfel3KOlwGvNCxf/udP/E8XyHpLDu76GJqGuuyU1y8qcDHWOmFQYvmpNBOjA6QnUdqw==",
       "path": "prometheus-net/3.1.4",
       "hashPath": "prometheus-net.3.1.4.nupkg.sha512"
+    },
+    "Sentry/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zVMPH0o1kvKU5GEJiWkaIiZaGdnc5roJuhQ5QbWJ6v3ijqEtnzBeL49sgHuQWDkU3KluxZymf6AOQpSNvFrKJQ==",
+      "path": "sentry/1.2.0",
+      "hashPath": "sentry.1.2.0.nupkg.sha512"
+    },
+    "Sentry.PlatformAbstractions/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NgcYNgZfIQNcMSFZTmgOria9/cqgKrV3ICNoC7iS/mmBZojLbdQMnnD7Tg5lfCKH1myk3AjU91VGDct88uw1Ow==",
+      "path": "sentry.platformabstractions/1.0.0",
+      "hashPath": "sentry.platformabstractions.1.0.0.nupkg.sha512"
+    },
+    "Sentry.Protocol/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IbaDxYb8ARVwlCgDYUVTxHmjdEPMX2GebJPtmf08ZOyrec632+6aWhYPAg5Yr3zoNkzDP1kV9rI4X9IDC07SBg==",
+      "path": "sentry.protocol/1.0.6",
+      "hashPath": "sentry.protocol.1.0.6.nupkg.sha512"
+    },
+    "System.Collections.Immutable/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EXKiDFsChZW0RjrZ4FYHu9aW6+P4MCgEDCklsVseRfhoO0F+dXeMSsMRAlVXIo06kGJ/zv+2w1a2uc2+kxxSaQ==",
+      "path": "system.collections.immutable/1.5.0",
+      "hashPath": "system.collections.immutable.1.5.0.nupkg.sha512"
     }
   }
 }

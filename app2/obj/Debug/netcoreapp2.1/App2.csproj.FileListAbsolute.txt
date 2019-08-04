@@ -9,3 +9,6 @@ C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.AssemblyIn
 C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.AssemblyInfo.cs
 C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.dll
 C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.pdb
+C:\Users\diash\source\repos\watcher\app2\bin\Debug\netcoreapp2.1\KafkaLib.dll
+C:\Users\diash\source\repos\watcher\app2\bin\Debug\netcoreapp2.1\KafkaLib.pdb
+C:\Users\diash\source\repos\watcher\app2\obj\Debug\netcoreapp2.1\App2.csproj.CopyComplete

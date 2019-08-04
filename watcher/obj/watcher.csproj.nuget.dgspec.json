@@ -48,6 +48,10 @@
               "version": "[2.1.0, )",
               "autoReferenced": true
             },
+            "Sentry": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
             "prometheus-net": {
               "target": "Package",
               "version": "[3.1.4, )"

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sentry;
+using System;
 
 namespace Watcher
 {
@@ -6,7 +7,10 @@ namespace Watcher
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (SentrySdk.Init("https://8c0cf70994fa459998cdcf3df5cf05d5@sentry.io/1509318"))
+            {
+                //Console.WriteLine(1 / 0);
+            }
         }
     }
 }

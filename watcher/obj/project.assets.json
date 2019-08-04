@@ -208,6 +208,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "prometheus-net/3.1.4": {
         "type": "package",
         "compile": {
@@ -215,6 +224,48 @@
         },
         "runtime": {
           "lib/netstandard2.0/Prometheus.NetStandard.dll": {}
+        }
+      },
+      "Sentry/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Sentry.PlatformAbstractions": "1.0.0",
+          "Sentry.Protocol": "1.0.6",
+          "System.Collections.Immutable": "1.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sentry.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sentry.dll": {}
+        }
+      },
+      "Sentry.PlatformAbstractions/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sentry.PlatformAbstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sentry.PlatformAbstractions.dll": {}
+        }
+      },
+      "Sentry.Protocol/1.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sentry.Protocol.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sentry.Protocol.dll": {}
+        }
+      },
+      "System.Collections.Immutable/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
         }
       }
     }
@@ -690,6 +741,36 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
     "prometheus-net/3.1.4": {
       "sha512": "vsXNMZiNC/fjJ7S6DriPfel3KOlwGvNCxf/udP/E8XyHpLDu76GJqGuuyU1y8qcDHWOmFQYvmpNBOjA6QnUdqw==",
       "type": "package",
@@ -704,11 +785,92 @@
         "prometheus-net.3.1.4.nupkg.sha512",
         "prometheus-net.nuspec"
       ]
+    },
+    "Sentry/1.2.0": {
+      "sha512": "zVMPH0o1kvKU5GEJiWkaIiZaGdnc5roJuhQ5QbWJ6v3ijqEtnzBeL49sgHuQWDkU3KluxZymf6AOQpSNvFrKJQ==",
+      "type": "package",
+      "path": "sentry/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Sentry.dll",
+        "lib/net461/Sentry.pdb",
+        "lib/net461/Sentry.xml",
+        "lib/netstandard2.0/Sentry.dll",
+        "lib/netstandard2.0/Sentry.pdb",
+        "lib/netstandard2.0/Sentry.xml",
+        "sentry.1.2.0.nupkg.sha512",
+        "sentry.nuspec"
+      ]
+    },
+    "Sentry.PlatformAbstractions/1.0.0": {
+      "sha512": "NgcYNgZfIQNcMSFZTmgOria9/cqgKrV3ICNoC7iS/mmBZojLbdQMnnD7Tg5lfCKH1myk3AjU91VGDct88uw1Ow==",
+      "type": "package",
+      "path": "sentry.platformabstractions/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Sentry.PlatformAbstractions.dll",
+        "lib/net40/Sentry.PlatformAbstractions.dll",
+        "lib/net45/Sentry.PlatformAbstractions.dll",
+        "lib/net471/Sentry.PlatformAbstractions.dll",
+        "lib/netstandard1.5/Sentry.PlatformAbstractions.dll",
+        "lib/netstandard2.0/Sentry.PlatformAbstractions.dll",
+        "sentry.platformabstractions.1.0.0.nupkg.sha512",
+        "sentry.platformabstractions.nuspec"
+      ]
+    },
+    "Sentry.Protocol/1.0.6": {
+      "sha512": "IbaDxYb8ARVwlCgDYUVTxHmjdEPMX2GebJPtmf08ZOyrec632+6aWhYPAg5Yr3zoNkzDP1kV9rI4X9IDC07SBg==",
+      "type": "package",
+      "path": "sentry.protocol/1.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Sentry.Protocol.dll",
+        "lib/net45/Sentry.Protocol.pdb",
+        "lib/net45/Sentry.Protocol.xml",
+        "lib/net46/Sentry.Protocol.dll",
+        "lib/net46/Sentry.Protocol.pdb",
+        "lib/net46/Sentry.Protocol.xml",
+        "lib/netstandard1.3/Sentry.Protocol.dll",
+        "lib/netstandard1.3/Sentry.Protocol.pdb",
+        "lib/netstandard1.3/Sentry.Protocol.xml",
+        "lib/netstandard2.0/Sentry.Protocol.dll",
+        "lib/netstandard2.0/Sentry.Protocol.pdb",
+        "lib/netstandard2.0/Sentry.Protocol.xml",
+        "sentry.protocol.1.0.6.nupkg.sha512",
+        "sentry.protocol.nuspec"
+      ]
+    },
+    "System.Collections.Immutable/1.5.0": {
+      "sha512": "EXKiDFsChZW0RjrZ4FYHu9aW6+P4MCgEDCklsVseRfhoO0F+dXeMSsMRAlVXIo06kGJ/zv+2w1a2uc2+kxxSaQ==",
+      "type": "package",
+      "path": "system.collections.immutable/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard1.3/System.Collections.Immutable.dll",
+        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.1.5.0.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
+      "Sentry >= 1.2.0",
       "prometheus-net >= 3.1.4"
     ]
   },
@@ -720,9 +882,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diash\\source\\repos\\watcher\\watcher\\watcher.csproj",
-      "projectName": "watcher",
-      "projectPath": "C:\\Users\\diash\\source\\repos\\watcher\\watcher\\watcher.csproj",
+      "projectUniqueName": "C:\\Users\\diash\\source\\repos\\watcher\\watcher\\Watcher.csproj",
+      "projectName": "Watcher",
+      "projectPath": "C:\\Users\\diash\\source\\repos\\watcher\\watcher\\Watcher.csproj",
       "packagesPath": "C:\\Users\\diash\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\diash\\source\\repos\\watcher\\watcher\\obj\\",
       "projectStyle": "PackageReference",
@@ -760,6 +922,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "Sentry": {
+            "target": "Package",
+            "version": "[1.2.0, )"
           },
           "prometheus-net": {
             "target": "Package",
