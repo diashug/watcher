@@ -7,25 +7,28 @@ namespace App2
     {
         private static string _consumerTopicName = "app1-outbox";
         private static string _producerTopicName = "app2-outbox";
+        private static string _checkpointTopicName = "last-checkpoint";
+
+        private static ContentConsumer cc = new ContentConsumer(_consumerTopicName);
+        private static ContentProducer cp = new ContentProducer(_producerTopicName);
+        private static ContentProducer cp1 = new ContentProducer(_checkpointTopicName);
 
         static void Main(string[] args)
         {
             Console.WriteLine("App2 initialised ...");
 
-            var cc = new ContentConsumer(_consumerTopicName);
-
-            cc.OnMessageReceived += HandleMessageReceived;
+            cc.OnMessageReceived += OnMessageReceived;
 
             Console.WriteLine("Message handler started ...");
 
             cc.ConsumeMessages();
         }
 
-        static void HandleMessageReceived(object sender, ConsumerEventArgs e)
+        static void OnMessageReceived(object sender, ConsumerEventArgs e)
         {
-            var cp = new ContentProducer(_producerTopicName);
+            cp.SendMessage(e.message);
+            cp1.SendMessage(e.message);
 
-            cp.SendMessage(e.message + " " + Guid.NewGuid() + " " + new DateTime().Ticks.ToString());
             Console.WriteLine($"{sender.ToString()} sent {e.message}");
         }
     }
